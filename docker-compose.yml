@@ -5,10 +5,10 @@ services:
     volumes:
       - ./muse:/data
     environment:
-      - DISCORD_TOKEN=${DISCORD_TOEKN}
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
       - YOUTUBE_API_KEY=${YOUTUBE_API_KEY}
       - SPOTIFY_CLIENT_ID=${SPOTIFY_CLIENT_ID}
-      - SPOTIFY_CLIENT_SECRET={SPOTIFY_CLIENT_SECRET}
+      - SPOTIFY_CLIENT_SECRET=${SPOTIFY_CLIENT_SECRET}
     network_mode: "service:warp"
     depends_on:
       - warp
